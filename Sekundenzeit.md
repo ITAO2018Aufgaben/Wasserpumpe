@@ -1,17 +1,15 @@
-boolean Lüfter1, Lüfter2, Lüfter3; //Lüfter
 int zeitmesser = 1000;
 int zeitstand;
-
+  
+boolean wsp1 = false;
+boolean wsp2 = false;
+boolean wsp3 = false;      //Lüfter
 void setup()
 {
    Serial.begin(9600);
 }
 void loop()
 {
-  
-  wsp1 = false;
-  wsp2 = false;
-  wsp3 = false;
   millis();
   zeitstand = millis() - zeitmesser;
   if (zeitstand >= 0)
