@@ -1,9 +1,9 @@
 int zeitmesser = 1000;
 int zeitstand;
   
-boolean wsp1 = false;
-boolean wsp2 = false;
-boolean wsp3 = false;      //Lüfter
+boolean melder1 = false;
+boolean melder2 = false;
+boolean melder3 = false;      //Lüfter
 void setup()
 {
    Serial.begin(9600);
@@ -20,5 +20,5 @@ void loop()
 }
 void test()
 {
-   Serial.println ("Test erfolgreich");
+  
 }
